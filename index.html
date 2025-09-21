@@ -217,7 +217,7 @@
 
 
   <!-- Starter Package Card -->
-  <div onclick="openPopup('starter')" style="background-color:#11111130; color:#fff; padding:2rem; border-radius:15px; width:320px; box-shadow:0 12px 30px rgba(0,0,0,0.7); cursor:pointer; transition: transform 0.3s;">
+  <div class="quote-card reveal" onclick="openPopup('starter')">
     <h3 style="margin-bottom:0.5rem; font-size:1.4rem; color:#f39c12;">Starter Package</h3>
     <p style="font-size:1.2rem; color:#facc15; margin-bottom:0.5rem;">₹8,000 – ₹15,000</p>
     <p style="font-size:0.95rem; color:#ccc;">Best for freelancers, personal portfolio, small shops</p>
@@ -225,7 +225,7 @@
   </div>
 
   <!-- Business Package Card -->
-  <div onclick="openPopup('business')" style="background-color:#11111130; color:#fff; padding:2rem; border-radius:15px; width:320px; box-shadow:0 12px 30px rgba(0,0,0,0.7); cursor:pointer; transition: transform 0.3s;">
+  <div class="quote-card reveal" onclick="openPopup('business')">
     <h3 style="margin-bottom:0.5rem; font-size:1.4rem; color:#f39c12;">Business Package</h3>
     <p style="font-size:1.2rem; color:#facc15; margin-bottom:0.5rem;">₹25,000 – ₹50,000</p>
     <p style="font-size:0.95rem; color:#ccc;">Best for local businesses, coaching centers, startups</p>
@@ -233,7 +233,7 @@
   </div>
 
   <!-- E-Commerce / Premium Package Card -->
-  <div onclick="openPopup('premium')" style="background-color:#11111130; color:#fff; padding:2rem; border-radius:15px; width:320px; box-shadow:0 12px 30px rgba(0,0,0,0.7); cursor:pointer; transition: transform 0.3s;">
+  <div class="quote-card reveal" onclick="openPopup('premium')">
     <h3 style="margin-bottom:0.5rem; font-size:1.4rem; color:#f39c12;">E-Commerce / Premium</h3>
     <p style="font-size:1.2rem; color:#facc15; margin-bottom:0.5rem;">₹70,000 – ₹1,50,000</p>
     <p style="font-size:0.95rem; color:#ccc;">Best for online stores, growing businesses, enterprises</p>
@@ -412,8 +412,21 @@ function closePopup() {
     <div class="container footer-grid" aria-label="Footer">
       <div class="footer-col">
         <div style="display:flex;align-items:center;gap:.6rem;margin-bottom:.6rem">
-          <div class="logo" style="width:44px;height:44px">SS</div>
-          <div style="font-weight:700;font-family:Poppins">SiteSpark</div>
+          <div class="logo-wrap" style="width:160px;height:54px;" aria-hidden="false">
+            <svg class="logo-rect" width="160" height="54" viewBox="0 0 220 70" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="2" y="2" width="216" height="66" rx="10" ry="10" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <rect class="snake" x="2" y="2" width="216" height="66" rx="10" ry="10" fill="none" stroke="url(#g1f)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <defs>
+                <linearGradient id="g1f" x1="0" x2="1">
+                  <stop offset="0%" stop-color="#2563eb" />
+                  <stop offset="100%" stop-color="#9333ea" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <a href="/" class="logo-text" aria-label="SiteSpark homepage">
+              <span class="site">Site</span><span class="spark">Spark</span>
+            </a>
+          </div>
         </div>
         <p class="muted">Ignite your digital presence. Prototype-first, performance-driven websites for startups & SMEs.</p>
         <div style="margin-top:.6rem" class="muted">© 2025 SiteSpark. All rights reserved.</div>
