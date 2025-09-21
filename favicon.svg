@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#9333ea"/>
+    </linearGradient>
+  </defs>
+  <rect width="48" height="48" rx="8" fill="#071018"/>
+  <!-- Blue flap in top-right -->
+  <path d="M36 6 h6 v6" fill="#2563eb"/>
+  <!-- S letter -->
+  <text x="24" y="30" font-family="Poppins, Arial, sans-serif" font-weight="700" font-size="22" text-anchor="middle" fill="url(#g)">S</text>
+</svg>

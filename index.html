@@ -10,6 +10,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="sitesp.png" type="image/png" style="border-radius:50%;mask-image:radial-gradient(circle,white 100%,transparent 100%);">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="favicon.svg">
 </head>
 <body>
 
@@ -18,10 +20,23 @@
     <div class="container header-inner">
       <div class="brand" aria-label="SiteSpark">
         <div class="logo" aria-hidden="true">
-    <img src="sitesp.png" alt="SS Logo" style="width: auto; height: auto; border-radius:50%">
-</div>
+        </div>
 
-        <div class="brand-name">SiteSpark</div>
+        <div class="logo-wrap" aria-hidden="false">
+          <svg class="logo-rect" width="220" height="70" viewBox="0 0 220 70" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="2" y="2" width="216" height="66" rx="10" ry="10" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <rect class="snake" x="2" y="2" width="216" height="66" rx="10" ry="10" fill="none" stroke="url(#g1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <defs>
+              <linearGradient id="g1" x1="0" x2="1">
+                <stop offset="0%" stop-color="#2563eb" />
+                <stop offset="100%" stop-color="#9333ea" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <a href="/" class="logo-text" aria-label="SiteSpark homepage">
+            <span class="site">Site</span><span class="spark">Spark</span>
+          </a>
+        </div>
       </div>
 
       <nav class="main-nav" role="navigation" aria-label="Main navigation">
