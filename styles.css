@@ -327,14 +327,33 @@
 
  .service-ico {
      width: 80px;
-     height: 50px;
+     height: 80px; /* equal width/height */
+     aspect-ratio: 1 / 1; /* ensures square ratio on supporting browsers */
+     box-sizing: border-box; /* include borders in sizing */
+     padding: 0; /* avoid padding affecting size */
+     line-height: 1; /* prevents font metrics from stretching */
      border-radius: 50%;
-     display: grid;
+     display: inline-grid; /* inline-friendly */
      place-items: center;
+     overflow: hidden; /* clip any children to the circular shape */
      background: var(--accent-grad);
      color: white;
-     font-size: 1.1rem
+     font-size: 1.1rem;
  }
+
+/* Prevent flex containers from resizing the icon; ensure consistent emoji sizing */
+.service-card {
+    align-items: center;
+}
+.service-ico {
+    min-width: 80px;
+    min-height: 80px;
+    max-width: 80px;
+    max-height: 80px;
+    flex: 0 0 auto; /* do not grow or shrink inside flex/grid */
+    font-size: 28px; /* size emoji/glyph to visually fit the circle */
+    line-height: 1; /* keep glyph centered */
+}
 
  /* portfolio */
  .portfolio-grid {
