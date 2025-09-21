@@ -27,7 +27,11 @@
           <a href="#quote-section" role="menuitem">Quotes</a>
           <a href="#contact" role="menuitem">Contact</a>
         </div>
-
+        <div class="hamburger" id="navHamburger" aria-label="Open navigation" tabindex="0">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         <a class="phone-pill" href="tel:+917054167098" aria-label="Call SiteSpark">📞 +91 7054167098</a>
         <button class="cta-primary" id="ctaBookTop" aria-controls="contact">Book Consultation</button>
       </nav>
@@ -185,32 +189,33 @@
 
  <!-- Quote Section Heading -->
 <div id="quote-section" style="text-align:center; margin-top:3rem;">
-  <h1 style="color:#f39c12; font-size:2.5rem; font-weight:bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.7);">Our Website Packages & Quotes</h1>
+  <h1 style="color:#f39c12; font-size:2.5rem; font-weight:bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.7);">Our Website Pricing & Quotes</h1>
   <p style="color:#ccc; font-size:1.1rem; margin-top:0.5rem;">Choose the plan that fits your business needs</p>
 </div>
 
 <!-- Container for Cards -->
 <div style="display:flex; flex-wrap:wrap; gap:1.5rem; justify-content:center; margin-top:2rem;">
 
-  <!-- Basic Quote Card -->
-  <div onclick="openPopup('basic')" style="background-color:#11111130; color:#fff; padding:2rem; border-radius:15px; width:280px; box-shadow:0 12px 30px rgba(0,0,0,0.7); cursor:pointer; transition: transform 0.3s;">
-    <h3 style="margin-bottom:0.5rem; font-size:1.4rem; color:#f39c12;">Basic Package</h3>
-    <p style="font-size:1.6rem; font-weight:bold; margin-bottom:0.5rem;">$299</p>
-    <p style="font-size:0.95rem; color:#ccc;">Ideal for small businesses.</p>
+
+  <!-- Starter Package Card -->
+  <div onclick="openPopup('starter')" style="background-color:#11111130; color:#fff; padding:2rem; border-radius:15px; width:320px; box-shadow:0 12px 30px rgba(0,0,0,0.7); cursor:pointer; transition: transform 0.3s;">
+    <h3 style="margin-bottom:0.5rem; font-size:1.4rem; color:#f39c12;">Starter Package</h3>
+    <p style="font-size:1.2rem; color:#facc15; margin-bottom:0.5rem;">₹8,000 – ₹15,000</p>
+    <p style="font-size:0.95rem; color:#ccc;">Best for freelancers, personal portfolio, small shops</p>
   </div>
 
-  <!-- Standard Quote Card -->
-  <div onclick="openPopup('standard')" style="background-color:#11111130; color:#fff; padding:2rem; border-radius:15px; width:280px; box-shadow:0 12px 30px rgba(0,0,0,0.7); cursor:pointer; transition: transform 0.3s;">
-    <h3 style="margin-bottom:0.5rem; font-size:1.4rem; color:#f39c12;">Standard Package</h3>
-    <p style="font-size:1.6rem; font-weight:bold; margin-bottom:0.5rem;">$599</p>
-    <p style="font-size:0.95rem; color:#ccc;">Perfect for growing businesses. Includes 10 pages website, SEO & contact form.</p>
+  <!-- Business Package Card -->
+  <div onclick="openPopup('business')" style="background-color:#11111130; color:#fff; padding:2rem; border-radius:15px; width:320px; box-shadow:0 12px 30px rgba(0,0,0,0.7); cursor:pointer; transition: transform 0.3s;">
+    <h3 style="margin-bottom:0.5rem; font-size:1.4rem; color:#f39c12;">Business Package</h3>
+    <p style="font-size:1.2rem; color:#facc15; margin-bottom:0.5rem;">₹25,000 – ₹50,000</p>
+    <p style="font-size:0.95rem; color:#ccc;">Best for local businesses, coaching centers, startups</p>
   </div>
 
-  <!-- Premium Quote Card -->
-  <div onclick="openPopup('premium')" style="background-color:#11111130; color:#fff; padding:2rem; border-radius:15px; width:280px; box-shadow:0 12px 30px rgba(0,0,0,0.7); cursor:pointer; transition: transform 0.3s;">
-    <h3 style="margin-bottom:0.5rem; font-size:1.4rem; color:#f39c12;">Premium Package</h3>
-    <p style="font-size:1.6rem; font-weight:bold; margin-bottom:0.5rem;">$999</p>
-    <p style="font-size:0.95rem; color:#ccc;">Luxury website for established businesses with all features included.</p>
+  <!-- E-Commerce / Premium Package Card -->
+  <div onclick="openPopup('premium')" style="background-color:#11111130; color:#fff; padding:2rem; border-radius:15px; width:320px; box-shadow:0 12px 30px rgba(0,0,0,0.7); cursor:pointer; transition: transform 0.3s;">
+    <h3 style="margin-bottom:0.5rem; font-size:1.4rem; color:#f39c12;">E-Commerce / Premium</h3>
+    <p style="font-size:1.2rem; color:#facc15; margin-bottom:0.5rem;">₹70,000 – ₹1,50,000</p>
+    <p style="font-size:0.95rem; color:#ccc;">Best for online stores, growing businesses, enterprises</p>
   </div>
 
 </div>
@@ -225,6 +230,7 @@
 
 <!-- Script to Open/Close Popup -->
 <script>
+
 function openPopup(packageName) {
   const popup = document.getElementById('popupContent');
   let title = '';
@@ -232,50 +238,53 @@ function openPopup(packageName) {
   let details = '';
   let whatsappLink = '';
 
-  if(packageName === 'basic') {
-    title = 'Basic Package Details';
-    price = '$299';
+  if(packageName === 'starter') {
+    title = 'Starter Package – ₹8,000 to ₹15,000';
+    price = 'Best for: Freelancers, personal portfolio, small shops';
     details = `
       <ul style="text-align:left; padding-left:1.2rem; color:#ccc;">
-        <li>5 pages fully responsive website</li>
-        <li>Basic SEO optimization</li>
-        <li>Contact form integration</li>
-        <li>Email support for 30 days</li>
+        <li>1–3 page static website (Landing / Portfolio / Contact)</li>
+        <li>Mobile-friendly responsive design</li>
+        <li>Basic SEO setup (meta tags, speed optimization)</li>
+        <li>Contact form / WhatsApp integration</li>
+        <li>Delivery in 3–5 days</li>
       </ul>
     `;
-    whatsappLink = 'https://wa.me/917054167098?text=Hi%20I%27m%20interested%20in%20the%20Basic%20Package';
-  } else if(packageName === 'standard') {
-    title = 'Standard Package Details';
-    price = '$599';
+    whatsappLink = 'https://wa.me/917054167098?text=Hi%20I%27m%20interested%20in%20the%20Starter%20Package';
+  } else if(packageName === 'business') {
+    title = 'Business Package – ₹25,000 to ₹50,000';
+    price = 'Best for: Local businesses, coaching centers, startups';
     details = `
       <ul style="text-align:left; padding-left:1.2rem; color:#ccc;">
-        <li>10 pages fully responsive website</li>
-        <li>SEO optimization & analytics setup</li>
-        <li>Contact & enquiry forms</li>
-        <li>Blog setup</li>
-        <li>Email & WhatsApp support for 3 months</li>
+        <li>5–8 pages (Home, About, Services, Blog, Contact, etc.)</li>
+        <li>WordPress or custom CMS (easy content updates)</li>
+        <li>Modern UI/UX design</li>
+        <li>Basic SEO + Google Business profile integration</li>
+        <li>SSL setup + hosting guidance</li>
+        <li>1 month free maintenance</li>
       </ul>
     `;
-    whatsappLink = 'https://wa.me/917054167098?text=Hi%20I%27m%20interested%20in%20the%20Standard%20Package';
+    whatsappLink = 'https://wa.me/917054167098?text=Hi%20I%27m%20interested%20in%20the%20Business%20Package';
   } else if(packageName === 'premium') {
-    title = 'Premium Package Details';
-    price = '$999';
+    title = 'E-Commerce / Premium Package – ₹70,000 to ₹1,50,000';
+    price = 'Best for: Online stores, growing businesses, enterprises';
     details = `
       <ul style="text-align:left; padding-left:1.2rem; color:#ccc;">
-        <li>20 pages fully responsive website</li>
-        <li>Advanced SEO optimization</li>
-        <li>E-commerce functionality</li>
-        <li>Custom animations & UI effects</li>
-        <li>24/7 support & maintenance</li>
+        <li>Full-featured e-commerce store (Shopify / WooCommerce / Custom)</li>
+        <li>20–50 product listings setup</li>
+        <li>Secure payment gateway integration</li>
+        <li>Advanced SEO + speed optimization</li>
+        <li>Email marketing setup + Google Analytics</li>
+        <li>2–3 months maintenance & support</li>
       </ul>
     `;
-    whatsappLink = 'https://wa.me/917054167098?text=Hi%20I%27m%20interested%20in%20the%20Premium%20Package';
+    whatsappLink = 'https://wa.me/917054167098?text=Hi%20I%27m%20interested%20in%20the%20E-Commerce%20Premium%20Package';
   }
 
   popup.innerHTML = `
     <span onclick="closePopup()" style="position:absolute; top:10px; right:15px; cursor:pointer; font-size:1.5rem;">&times;</span>
     <h2 style="color:#f39c12; margin-bottom:0.5rem;">${title}</h2>
-    <p style="font-size:1.6rem; font-weight:bold; margin-bottom:1rem;">${price}</p>
+    <p style="font-size:1.1rem; color:#facc15; margin-bottom:0.5rem;">${price}</p>
     <p style="margin-bottom:1rem;">This package includes:</p>
     ${details}
     <a href="${whatsappLink}" target="_blank" style="display:inline-block; margin-top:1rem; background-color:#f39c12; color:#111; padding:0.8rem 1.5rem; border-radius:10px; text-decoration:none; font-weight:bold;">Contact on WhatsApp</a>
@@ -291,20 +300,6 @@ function closePopup() {
 
 
 <div style="height: 8rem;"></div> <!-- adds 2rem vertical space -->
-
-
-  <!-- CLIENTS STRIP -->
-  <section class="container" aria-labelledby="clients-heading">
-    <h2 id="clients-heading" class="section-title reveal">Trusted by</h2>
-    <div class="muted reveal">We partner with startups and SMEs — logos are placeholders; replace with real assets.</div>
-
-    <div class="clients-strip" id="clientsStrip" aria-hidden="false" style="margin-top:1rem; display:flex; gap:1rem; align-items:center; overflow-x:auto;">
-  <img class="client-logo" src="comingsoon.jpg" alt="Client 1" style="width:150px; height:auto;">
-  <img class="client-logo" src="comingsoon.jpg" alt="Client 2" style="width:150px; height:auto;">
-  <img class="client-logo" src="comingsoon.jpg" alt="Client 3" style="width:150px; height:auto;">
-</div>
-
-  </section>
 
   <!-- TESTIMONIALS -->
   <section class="container" aria-labelledby="test-heading">
@@ -454,6 +449,21 @@ function closePopup() {
   </div>
 
   <script>
+    // Hamburger menu toggle for mobile nav
+    (function(){
+      const hamburger = document.getElementById('navHamburger');
+      const navLinks = document.querySelector('.nav-links');
+      if(hamburger && navLinks) {
+        hamburger.addEventListener('click', function() {
+          navLinks.classList.toggle('open');
+        });
+        hamburger.addEventListener('keydown', function(e) {
+          if(e.key === 'Enter' || e.key === ' ') {
+            navLinks.classList.toggle('open');
+          }
+        });
+      }
+    })();
 
     // Smooth scroll for CTAs
     document.getElementById('btn-get').addEventListener('click', ()=> {
