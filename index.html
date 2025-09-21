@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SiteSpark — Ignite Your Digital Presence (Dark Mode)</title>
+  <meta name="description" content="SiteSpark builds modern, fast & conversion-focused websites. Prototype-first workflow. Contact via phone or WhatsApp." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Fonts: Poppins (headings) + Inter (body) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand" aria-label="SiteSpark">
+        <div class="logo" aria-hidden="true">SS</div>
+        <div class="brand-name">SiteSpark</div>
+      </div>
+
+      <nav class="main-nav" role="navigation" aria-label="Main navigation">
+        <div class="nav-links" role="menubar" aria-hidden="false">
+          <a href="#services" role="menuitem">Services</a>
+          <a href="#portfolio" role="menuitem">Prototypes</a>
+          <a href="#quote-section" role="menuitem">Quotes</a>
+          <a href="#contact" role="menuitem">Contact</a>
+        </div>
+
+        <a class="phone-pill" href="tel:+917054167098" aria-label="Call SiteSpark">📞 +91 7054167098</a>
+        <button class="cta-primary" id="ctaBookTop" aria-controls="contact">Book Consultation</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="hero" aria-labelledby="hero-title">
+    <div class="spark-bg" aria-hidden="true">
+      <div class="spark-blob one" style="animation:floatY 9s ease-in-out infinite;"></div>
+      <div class="spark-blob two" style="animation:floatY 11s ease-in-out infinite;"></div>
+    </div>
+
+    <div class="container hero-grid">
+      <div class="reveal" id="hero-left">
+        <h1 id="hero-title" class="hero-title">We build high-performance digital experiences that convert.</h1>
+        <p class="hero-sub">SiteSpark designs & develops prototype-first, SEO-ready websites for businesses and startups. Fast delivery, transparent process, and measurable outcomes.</p>
+
+        <div class="hero-actions">
+          <button class="cta-primary" id="btn-get">Get Your Website</button>
+          <a class="cta-ghost" href="#portfolio">Explore Prototypes</a>
+        </div>
+
+        <div style="margin-top:1rem" class="muted">
+          Contact via phone or form. <span style="display:inline-block;margin-left:.6rem">Response time: <strong>within 24 hours</strong></span>
+        </div>
+      </div>
+
+      <aside class="hero-side reveal" id="hero-right" aria-label="Quick contact">
+        <div style="display:flex;flex-direction:column;gap:.6rem">
+          <div style="font-weight:700;font-family:Poppins">Quick Contact</div>
+          <div class="muted">Call / WhatsApp</div>
+          <a class="cta-primary" 
+   href="https://wa.me/917054167098?text=Hi%20SiteSpark,%20I'm%20interested%20in%20a%20website%20and%20would%20like%20to%20know%20more%20about%20your%20services.%20Could%20you%20please%20share%20details%20and%20pricing%20options?" 
+   target="_blank" 
+   rel="noopener">
+   Chat on WhatsApp
+</a>
+
+          <a class="cta-ghost" href="tel:+917054167098" style="display:inline-block;width:max-content;margin-top:.4rem">Call +91 7054167098</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- WHY / SERVICES -->
+  <section id="services" class="container" aria-labelledby="services-heading">
+    <h2 id="services-heading" class="section-title reveal">What We Do</h2>
+    <p class="muted reveal">Full-stack website services with performance, accessibility and conversion optimization baked-in.</p>
+    <div class="gap-1"></div>
+
+    <div class="services-grid" id="servicesGrid">
+      <div class="service-card reveal">
+        <div class="service-ico">🌐</div>
+        <div>
+          <strong>Website Design & Development</strong>
+          <div class="muted">Custom responsive websites, e-commerce, portals & dashboards with fast TTFB and lean assets.</div>
+        </div>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-ico">🧩</div>
+        <div>
+          <strong>Prototype-First Workflow</strong>
+          <div class="muted">Interactive prototypes for sign-off before we begin development — save time & reduce revisions.</div>
+        </div>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-ico">⚡</div>
+        <div>
+          <strong>Performance & SEO</strong>
+          <div class="muted">Core Web Vitals optimized, semantic markup, and on-page SEO to grow organic visibility.</div>
+        </div>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-ico">🎨</div>
+        <div>
+          <strong>Brand & Visual Identity</strong>
+          <div class="muted">Logo, color systems and visual templates to keep your brand consistent across touchpoints.</div>
+        </div>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-ico">📣</div>
+        <div>
+          <strong>Digital Marketing</strong>
+          <div class="muted">PPC, social strategy and funnels that align with product & user journeys.</div>
+        </div>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-ico">🔁</div>
+        <div>
+          <strong>Maintenance & Support</strong>
+          <div class="muted">Short-term SLA for post-launch support and optional monthly retainers.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROTOTYPES / PORTFOLIO -->
+  <section id="portfolio" class="container" aria-labelledby="portfolio-heading">
+    <h2 id="portfolio-heading" class="section-title reveal">Prototype Showcase</h2>
+    <p class="muted reveal">Click demos to view interactive prototypes. Each demo is a standalone static build you can inspect and approve.</p>
+
+    <div class="gap-1"></div>
+    <div class="portfolio-grid" id="protoGrid">
+      <!-- Card 1 -->
+      <article class="proto-card reveal">
+        <div class="proto-thumb-wrap">
+          <img class="proto-thumb" src="gyan.png" alt="E-commerce prototype" loading="lazy">
+        </div>
+        <div class="proto-body">
+          <h3>GyanDhara</h3>
+          <p class="muted">A learning platform for students and educators.</p>
+          <div class="card-meta" style="margin-top:.6rem">  
+            <div class="muted">Category: Education</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="proto-card reveal">
+        <div class="proto-thumb-wrap">
+          <img class="proto-thumb" src="weather.png" alt="Weather app prototype" loading="lazy">
+        </div>
+        <div class="proto-body">
+          <h3>Weather App</h3>
+          <p class="muted">Real-time weather updates, forecasts and alerts for users.</p>
+          <div class="card-meta" style="margin-top:.6rem">
+            <div class="muted">Category: EdTech</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="proto-card reveal">
+        <div class="proto-thumb-wrap">
+          <img class="proto-thumb" src="port.png" alt="Restaurant ordering prototype" loading="lazy">
+        </div>
+        <div class="proto-body">
+          <h3>Portfolio</h3>
+          <p class="muted">Showcase of various projects and case studies.</p>
+          <div class="card-meta" style="margin-top:.6rem">
+            <div class="muted">Category: FoodTech</div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+  <!-- Container for Cards -->
+<div style="display:flex; flex-wrap:wrap; gap:1.5rem; justify-content:center; margin-top:2rem;">
+
+ <!-- Quote Section Heading -->
+<div id="quote-section" style="text-align:center; margin-top:3rem;">
+  <h1 style="color:#f39c12; font-size:2.5rem; font-weight:bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.7);">Our Website Packages & Quotes</h1>
+  <p style="color:#ccc; font-size:1.1rem; margin-top:0.5rem;">Choose the plan that fits your business needs</p>
+</div>
+
+<!-- Container for Cards -->
+<div style="display:flex; flex-wrap:wrap; gap:1.5rem; justify-content:center; margin-top:2rem;">
+
+  <!-- Basic Quote Card -->
+  <div onclick="openPopup('basic')" style="background-color:#11111130; color:#fff; padding:2rem; border-radius:15px; width:280px; box-shadow:0 12px 30px rgba(0,0,0,0.7); cursor:pointer; transition: transform 0.3s;">
+    <h3 style="margin-bottom:0.5rem; font-size:1.4rem; color:#f39c12;">Basic Package</h3>
+    <p style="font-size:1.6rem; font-weight:bold; margin-bottom:0.5rem;">$299</p>
+    <p style="font-size:0.95rem; color:#ccc;">Ideal for small businesses.</p>
+  </div>
+
+  <!-- Standard Quote Card -->
+  <div onclick="openPopup('standard')" style="background-color:#11111130; color:#fff; padding:2rem; border-radius:15px; width:280px; box-shadow:0 12px 30px rgba(0,0,0,0.7); cursor:pointer; transition: transform 0.3s;">
+    <h3 style="margin-bottom:0.5rem; font-size:1.4rem; color:#f39c12;">Standard Package</h3>
+    <p style="font-size:1.6rem; font-weight:bold; margin-bottom:0.5rem;">$599</p>
+    <p style="font-size:0.95rem; color:#ccc;">Perfect for growing businesses. Includes 10 pages website, SEO & contact form.</p>
+  </div>
+
+  <!-- Premium Quote Card -->
+  <div onclick="openPopup('premium')" style="background-color:#11111130; color:#fff; padding:2rem; border-radius:15px; width:280px; box-shadow:0 12px 30px rgba(0,0,0,0.7); cursor:pointer; transition: transform 0.3s;">
+    <h3 style="margin-bottom:0.5rem; font-size:1.4rem; color:#f39c12;">Premium Package</h3>
+    <p style="font-size:1.6rem; font-weight:bold; margin-bottom:0.5rem;">$999</p>
+    <p style="font-size:0.95rem; color:#ccc;">Luxury website for established businesses with all features included.</p>
+  </div>
+
+</div>
+
+<!-- Popup Overlay -->
+<div id="quotePopup" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.85); backdrop-filter:blur(4px); justify-content:center; align-items:center; z-index:1000;">
+  <div id="popupContent" style="background-color:#171717cd; color:#fff; padding:2rem; border-radius:15px; width:400px; max-width:90%; text-align:center; position:relative;">
+    <span onclick="closePopup()" style="position:absolute; top:10px; right:15px; cursor:pointer; font-size:1.5rem;">&times;</span>
+    <!-- Content will be filled dynamically -->
+  </div>
+</div>
+
+<!-- Script to Open/Close Popup -->
+<script>
+function openPopup(packageName) {
+  const popup = document.getElementById('popupContent');
+  let title = '';
+  let price = '';
+  let details = '';
+  let whatsappLink = '';
+
+  if(packageName === 'basic') {
+    title = 'Basic Package Details';
+    price = '$299';
+    details = `
+      <ul style="text-align:left; padding-left:1.2rem; color:#ccc;">
+        <li>5 pages fully responsive website</li>
+        <li>Basic SEO optimization</li>
+        <li>Contact form integration</li>
+        <li>Email support for 30 days</li>
+      </ul>
+    `;
+    whatsappLink = 'https://wa.me/917054167098?text=Hi%20I%27m%20interested%20in%20the%20Basic%20Package';
+  } else if(packageName === 'standard') {
+    title = 'Standard Package Details';
+    price = '$599';
+    details = `
+      <ul style="text-align:left; padding-left:1.2rem; color:#ccc;">
+        <li>10 pages fully responsive website</li>
+        <li>SEO optimization & analytics setup</li>
+        <li>Contact & enquiry forms</li>
+        <li>Blog setup</li>
+        <li>Email & WhatsApp support for 3 months</li>
+      </ul>
+    `;
+    whatsappLink = 'https://wa.me/917054167098?text=Hi%20I%27m%20interested%20in%20the%20Standard%20Package';
+  } else if(packageName === 'premium') {
+    title = 'Premium Package Details';
+    price = '$999';
+    details = `
+      <ul style="text-align:left; padding-left:1.2rem; color:#ccc;">
+        <li>20 pages fully responsive website</li>
+        <li>Advanced SEO optimization</li>
+        <li>E-commerce functionality</li>
+        <li>Custom animations & UI effects</li>
+        <li>24/7 support & maintenance</li>
+      </ul>
+    `;
+    whatsappLink = 'https://wa.me/917054167098?text=Hi%20I%27m%20interested%20in%20the%20Premium%20Package';
+  }
+
+  popup.innerHTML = `
+    <span onclick="closePopup()" style="position:absolute; top:10px; right:15px; cursor:pointer; font-size:1.5rem;">&times;</span>
+    <h2 style="color:#f39c12; margin-bottom:0.5rem;">${title}</h2>
+    <p style="font-size:1.6rem; font-weight:bold; margin-bottom:1rem;">${price}</p>
+    <p style="margin-bottom:1rem;">This package includes:</p>
+    ${details}
+    <a href="${whatsappLink}" target="_blank" style="display:inline-block; margin-top:1rem; background-color:#f39c12; color:#111; padding:0.8rem 1.5rem; border-radius:10px; text-decoration:none; font-weight:bold;">Contact on WhatsApp</a>
+  `;
+  
+  document.getElementById('quotePopup').style.display = 'flex';
+}
+
+function closePopup() {
+  document.getElementById('quotePopup').style.display = 'none';
+}
+</script>
+
+
+<div style="height: 8rem;"></div> <!-- adds 2rem vertical space -->
+
+
+  <!-- CLIENTS STRIP -->
+  <section class="container" aria-labelledby="clients-heading">
+    <h2 id="clients-heading" class="section-title reveal">Trusted by</h2>
+    <div class="muted reveal">We partner with startups and SMEs — logos are placeholders; replace with real assets.</div>
+
+    <div class="clients-strip" id="clientsStrip" aria-hidden="false" style="margin-top:1rem; display:flex; gap:1rem; align-items:center; overflow-x:auto;">
+  <img class="client-logo" src="comingsoon.jpg" alt="Client 1" style="width:150px; height:auto;">
+  <img class="client-logo" src="comingsoon.jpg" alt="Client 2" style="width:150px; height:auto;">
+  <img class="client-logo" src="comingsoon.jpg" alt="Client 3" style="width:150px; height:auto;">
+</div>
+
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="container" aria-labelledby="test-heading">
+    <h2 id="test-heading" class="section-title reveal">Client Feedback</h2>
+    <div class="testimonials" id="testimonials">
+      <div class="test-item reveal"><strong>“SiteSpark delivered a high-quality site — our conversions improved within 30 days.”</strong><div class="muted">— Client A</div></div>
+      <div class="test-item reveal"><strong>“The prototype-first approach saved us time and reduced revisions.”</strong><div class="muted">— Client B</div></div>
+      <div class="test-item reveal"><strong>“Great communication, punctual delivery and measurable results.”</strong><div class="muted">— Client C</div></div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="container" aria-labelledby="process-heading">
+    <h2 id="process-heading" class="section-title reveal">How We Work</h2>
+    <p class="muted reveal">Transparent, sprint-based delivery so you always know progress and costs.</p>
+
+    <div class="gap-1"></div>
+    <div style="display:grid;gap:1rem;grid-template-columns:repeat(1,1fr)">
+      <div class="service-card reveal"><strong>1. Share brief</strong><div class="muted">15-min call or WhatsApp — define goals, timeframe & budget.</div></div>
+      <div class="service-card reveal"><strong>2. Prototype</strong><div class="muted">Interactive sign-off prototype in 3–5 business days.</div></div>
+      <div class="service-card reveal"><strong>3. Development</strong><div class="muted">Agile sprints, staging review & QA cycles.</div></div>
+      <div class="service-card reveal"><strong>4. Launch & Support</strong><div class="muted">Secure deployment, monitoring & optional retainer.</div></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="container" aria-labelledby="contact-heading">
+    <h2 id="contact-heading" class="section-title reveal">Get in Touch</h2>
+    <p class="muted reveal">We show only the business phone publicly. Use the form for briefs or click WhatsApp for immediate chat.</p>
+
+    <div class="gap-1"></div>
+    <div class="contact-grid">
+      <div class="contact-card reveal" aria-hidden="false">
+        <div style="font-weight:700;font-family:Poppins">Call / WhatsApp</div>
+        <div class="muted">+91 8840036642</div>
+        <div style="margin-top:.6rem">
+          <a class="cta-primary" 
+   href="https://wa.me/918840036642?text=Hi%20SiteSpark,%20I'm%20interested%20in%20a%20website%20and%20would%20like%20to%20know%20more%20about%20your%20services.%20Could%20you%20please%20share%20details%20and%20pricing%20options?" 
+   target="_blank" 
+   rel="noopener">
+   Chat on WhatsApp
+</a>
+
+          <a class="cta-ghost" href="tel:+918840036642" style="margin-left:.6rem">Call Now</a>
+        </div>
+        <hr style="border:none;border-top:1px solid rgba(255,255,255,0.03);margin:1rem 0" />
+        <div class="muted">Tip: Include the number of pages, integrations (payments/admin), and desired timeline for a quicker quote.</div>
+      </div>
+
+      <!-- Contact Form (EmailJS) -->
+     <form id="contact-form">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit" id="submit" style="padding: 10px 20px; ">Send Message</button>
+    </form>
+      <div id="formStatus" role="status" aria-live="polite" style="margin-top:.6rem;color:var(--muted)"></div>
+    </div>
+  </section>
+
+  <!-- Include EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+  emailjs.init("uYzFQXoZe3sOvHbse");  // Replace with your actual public key
+  document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    emailjs.init("uYzFQXoZe3sOvHbse"); // Replace with your EmailJS Public Key
+
+    let params = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      message: document.getElementById("message").value,
+    };
+
+    emailjs.send("service_0q4f2ag", "template_pkgzgab", params)
+      .then(function(response) {
+        alert("Message sent successfully!");
+        document.getElementById("contact-form").reset();
+      }, function(error) {
+        alert("Failed to send message. Please try again.");
+      });
+  });
+</script>
+
+  <!-- FOOTER (enhanced) -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-grid" aria-label="Footer">
+      <div class="footer-col">
+        <div style="display:flex;align-items:center;gap:.6rem;margin-bottom:.6rem">
+          <div class="logo" style="width:44px;height:44px">SS</div>
+          <div style="font-weight:700;font-family:Poppins">SiteSpark</div>
+        </div>
+        <p class="muted">Ignite your digital presence. Prototype-first, performance-driven websites for startups & SMEs.</p>
+        <div style="margin-top:.6rem" class="muted">© 2025 SiteSpark. All rights reserved.</div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick links</h4>
+        <nav class="links" aria-label="Footer links">
+          <div><a href="#portfolio">Prototypes</a></div>
+          <div><a href="#services">Services</a></div>
+          <div><a href="#process-heading">How we work</a></div>
+          <div><a href="#contact">Contact</a></div>
+        </nav>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="muted">Phone: <a href="tel:+917054167098">+91 7054167098</a></div>
+        <div class="muted">Phone: <a href="tel:+918840036642">+91 8840036642</a></div>
+        <div style="margin-top:.6rem">
+          <h4 style="margin:0 0 .4rem">Newsletter</h4>
+          <form onsubmit="event.preventDefault(); alert('Newsletter demo — integrate a provider to capture emails');" class="newsletter" aria-label="Newsletter signup">
+            <input type="email" placeholder="Your email" aria-label="Your email">
+            <button class="btn-sm" type="submit">Subscribe</button>
+          </form>
+        </div>
+        <div style="margin-top:.8rem" class="muted">
+          <div class="socials" aria-hidden="false">
+            <!-- LinkedIn -->
+  <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5V24H0V8zm7.5 0h4.78v2.16h.07c.67-1.27 2.31-2.61 4.75-2.61C22.76 7.55 24 10.21 24 14.24V24h-5v-8.04c0-1.92-.03-4.38-2.67-4.38-2.67 0-3.08 2.08-3.08 4.24V24H7.5V8z"/>
+    </svg>
+  </a>
+
+  <!-- WhatsApp -->
+<a href="https://wa.me/918840036642" aria-label="WhatsApp" target="_blank" rel="noopener">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path d="M20.52 3.48A11.914 11.914 0 0012 0C5.37 0 0 5.37 0 12c0 2.12.55 4.1 1.5 5.85L0 24l6.47-1.47A11.957 11.957 0 0012 24c6.63 0 12-5.37 12-12 0-3.2-1.25-6.18-3.48-8.52zM12 21.82c-2.05 0-3.96-.55-5.6-1.5l-.4-.25-3.85.88.82-3.76-.27-.42C1.97 15.97 1.5 14.03 1.5 12 1.5 6.21 6.21 1.5 12 1.5S22.5 6.21 22.5 12 17.79 21.82 12 21.82zm5.12-7.53c-.27-.14-1.6-.79-1.85-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.85 1.06-.16.18-.32.2-.59.07-.27-.14-1.13-.42-2.16-1.33-.8-.71-1.34-1.58-1.5-1.85-.16-.27-.02-.41.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.48-.83-2.02-.22-.52-.44-.45-.61-.46-.16 0-.35-.01-.54-.01s-.48.07-.73.34c-.25.27-.96.93-.96 2.27s.98 2.63 1.12 2.81c.14.18 1.94 2.96 4.7 4.15.66.28 1.17.45 1.57.58.66.21 1.26.18 1.73.11.53-.08 1.6-.65 1.83-1.28.23-.63.23-1.17.16-1.28-.07-.11-.25-.18-.52-.32z"/>
+  </svg>
+</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- PREVIEW MODAL -->
+  <div id="previewModal" style="position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:linear-gradient(rgba(2,6,23,.75), rgba(2,6,23,.92));z-index:200;padding:1rem">
+    <div style="background:var(--panel);border-radius:10px;max-width:1100px;width:100%;overflow:hidden;border:1px solid rgba(255,255,255,0.03);position:relative">
+      <button onclick="closePreview()" aria-label="Close preview" style="position:absolute;right:12px;top:10px;border:0;background:transparent;color:var(--muted);font-size:20px;cursor:pointer">✕</button>
+      <iframe id="previewFrame" src="" style="width:100%;height:72vh;border:0" title="Prototype preview"></iframe>
+    </div>
+  </div>
+
+  <script>
+
+    // Smooth scroll for CTAs
+    document.getElementById('btn-get').addEventListener('click', ()=> {
+      document.getElementById('contact').scrollIntoView({behavior:'smooth', block:'center'});
+    });
+    document.getElementById('ctaBookTop').addEventListener('click', ()=> {
+      document.getElementById('contact').scrollIntoView({behavior:'smooth', block:'center'});
+    });
+
+    // IntersectionObserver: reveal elements on scroll
+    (function() {
+      const opts = {threshold: 0.12};
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) entry.target.classList.add('show');
+        });
+      }, opts);
+      document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+    })();
+
+    // open preview in modal
+    function openPreview(url){
+      const frame = document.getElementById('previewFrame');
+      frame.src = url;
+      document.getElementById('previewModal').style.display = 'flex';
+      document.getElementById('previewModal').focus();
+    }
+    function closePreview(){
+      document.getElementById('previewFrame').src = '';
+      document.getElementById('previewModal').style.display = 'none';
+    }
+
+    // Clients auto-scroll (gentle loop)
+    (function autoScrollClients(){
+      const strip = document.getElementById('clientsStrip');
+      if(!strip) return;
+      let direction = 1;
+      let pos = 0;
+      setInterval(()=>{
+        pos += 1 * direction;
+        if(pos > strip.scrollWidth - strip.clientWidth - 10) direction = -1;
+        if(pos < 0) direction = 1;
+        strip.scrollTo({left: pos, behavior: 'smooth'});
+      }, 80);
+    })();
+
+    // Testimonials rotate
+    (function rotateTests(){
+      const container = document.getElementById('testimonials');
+      if(!container) return;
+      const items = Array.from(container.children);
+      let idx = 0;
+      items.forEach((it,i)=> it.style.display = i===0 ? 'block' : 'none');
+      setInterval(()=>{
+        items[idx].style.display = 'none';
+        idx = (idx+1) % items.length;
+        items[idx].style.display = 'block';
+      }, 4200);
+    })();
+
+    // Formspree handling (client-side, no backend)
+    (function handleForm(){
+      const form = document.getElementById('contactForm');
+      if(!form) return;
+      const status = document.getElementById('formStatus');
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        status.textContent = 'Sending...';
+        const data = new FormData(form);
+        try {
+          const res = await fetch(form.action, {method:'POST', body: data, headers: {'Accept': 'application/json'}});
+          if(res.ok){
+            status.textContent = 'Thanks — we received your request. We will contact you soon!';
+            form.reset();
+          } else {
+            const json = await res.json();
+            status.textContent = json?.error || 'Submission failed — please try WhatsApp.';
+          }
+        } catch(err) {
+          status.textContent = 'Network error — please try WhatsApp.';
+        }
+      });
+    })();
+
+    // Accessibility: close preview with ESC
+    document.addEventListener('keydown', (e) => {
+      if(e.key === 'Escape') closePreview();
+    });
+
+    // Small performance hint: prefetch likely demos on hover
+    document.querySelectorAll('a[href^="/demos/"]').forEach(a=>{
+      a.addEventListener('mouseenter', () => {
+        const link = a.getAttribute('href');
+        if(link) {
+          const l = document.createElement('link');
+          l.rel = 'preload';
+          l.as = 'document';
+          l.href = link;
+          document.head.appendChild(l);
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
